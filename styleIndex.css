@@ -1,0 +1,146 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+.burger
+{
+    display: none;
+}
+
+nav
+{
+    background-color: #23364B;
+    padding:0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: left;
+    padding-inline-start: 0;
+}
+
+
+.navbar li
+{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 ;
+}
+
+i
+{
+    color: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.navbar li a
+{
+    display: block;
+    color: white;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    padding-top: 20px;
+    border-right: 1px dashed #9AAAB7;
+}
+
+.navbar #accueil
+{
+    background-color: #F36428;
+}
+
+.navbar li a:hover
+{
+    background-color: #F36428;
+}
+
+.elements
+{
+    position: absolute;
+}
+
+.elements li
+{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 ;
+}
+
+.elements li a
+{
+    display: none;
+    color: white;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    padding-top: 20px;
+    border-right: 1px dashed #9AAAB7;
+    /* position: absolute; */
+    text-align: center;
+}
+
+.navbar li:hover .elements li a
+{
+    display: block;
+}
+
+.elements
+{
+    background-color: #23364B;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+@media screen and (max-width: 1360px) and (min-width:510px){
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 518px){
+    .navbar{
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .burger 
+    {
+        display: block;
+    }
+
+        nav
+    {
+        background-color: #23364B;
+        padding:0;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+    }
+        .navbar li a
+    {
+        border:none;
+        width:auto;
+    }    
+        .navbar li a
+    {
+        padding-left: 15px;
+    }
+}  
